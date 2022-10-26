@@ -54,10 +54,9 @@ let madeLi = liMaker("Made this!")
 addLi(madeLi)
 
 function headerMaker(size, text){
-    let header = document.createElement('h3')
+    let header = document.createElement(`h${size}`)
     header.innerText = text
-    header.style.fontSize = size
     return header
 }
-let h3 = headerMaker(12, "Made this as well")
+let h3 = headerMaker(3, "Made this as well")
 addLi(h3)
